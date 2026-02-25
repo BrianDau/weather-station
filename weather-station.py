@@ -9,7 +9,7 @@ config.read('config.txt')
 
 config_details = dict(config.items('CONFIG'))
 
-r = requests.get('https://api.openweathermap.org/data/2.5/onecall?lat=38.9&lon=-77.27&exclude=minutely,hourly,alerts&appid='+config_details['openweatherid']+'&units=imperial')
+r = requests.get('https://api.openweathermap.org/data/3.0/onecall?lat=38.9&lon=-77.27&exclude=minutely,hourly,alerts&appid='+config_details['openweatherid']+'&units=imperial')
 #print(r.status_code)
 #pprint(r.json())
 
