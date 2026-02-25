@@ -1,0 +1,4 @@
+# example crontab file
+# run weather-station every five minutes from 6am to 8:55pm
+# run forecast once a day at 9pm
+# rotate log files
