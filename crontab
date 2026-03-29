@@ -1,0 +1,5 @@
+# example crontab file
+# run weather-station every five minutes from 6am to 8:55pm
+0,5,10,15,20,25,30,35,40,45,50,55 6-20 * * * /usr/bin/python3 /home/pi/weather-station/weather-station.py >> /home/pi/weather-station/logs/weather-station.log
+# run forecast once a day at 9pm
+0 21 * * * /usr/bin/python3 /home/pi/weather-station/forecast.py >> /home/pi/weather-station/logs/forecast.log
